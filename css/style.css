@@ -3,14 +3,6 @@
   Цвет заголовков ЧЕРНЫЙ  - #212121
   цвет ЛОГО ЧЁРНЫЙ - #000000
   цвет основного цвета СЕРЫЙ - #757575  
-
-  16/14 = 1.14  
-  42/36 = 1.17
-  60/44 = 1.36
-  30/16 = 1.87
-  24/14 = 1.71
-  19/16 = 1.19
-  26/22 = 1.18
 */
 
 :root {
@@ -23,18 +15,6 @@
   --footer-bgc: #2F303A;
   --footer-social:rgba(100%, 100%, 100%, 10%);
 }
-/* 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}  */
-
-
 
 body {
   background-color: var(--primary-text-color);
@@ -54,14 +34,18 @@ h1, h2, h3, h4, h5, h6{
 /* ul styles */
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* header color */
 .header {
   background-color:var(--primary-text-color);
+  margin-top: 25px;
+  margin-bottom: 24px;
 }
 /* link header logo */
 .link-logo .logo {
-  color: var(--accent-color);
+  color: var(--accent-color);  
 }
 /* link header logo */
 .nav-header .logo-studio {
@@ -103,6 +87,17 @@ ul {
 .address-header .link:focus {
   color: var(--accent-color);
 } 
+/* styles for container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  outline: 3px solid teal;
+
+  /* text-align: center; */
+}
 /* hero section-title styles */
 .hero .section-title {  
   color: var(--primary-text-color);  
@@ -112,6 +107,8 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 /* hero link style */
 .hero .link {
@@ -131,6 +128,15 @@ ul {
   height: 600px; */
   text-align: center;
 }
+/* hero-link style */
+.hero-link {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* section-title styles */
 .section-title {
   color: var(--title-text-color);
@@ -139,6 +145,9 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 /* title-features styles */
 .title-features {
@@ -146,11 +155,14 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 /* features text styles */
 .list-features .text {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 /* title present style */
 .title-present {
@@ -162,6 +174,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 /* section Наша команда */
 .team {
@@ -180,6 +194,13 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* team img padding style */
+.team-img {
+  margin-bottom: 30px;
 }
 /* team position styles*/
 .list-item .text {
@@ -188,6 +209,9 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 /* footer */
 .footer {
@@ -242,11 +266,11 @@ color: rgba(255, 255, 255, 0.6);
 }
 /* copywriting style */
 .copywriting {
-font-weight: 400;
-font-size: 12px;
-line-height: 2;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
               /* Porfolio page */
@@ -285,16 +309,11 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 }
-/* border line between secton */
-.border {
-  border-top: 1px solid  #ECECEC;
-  margin: 94px 215px;
-}
 .border-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin: 50px 215px 18px;
 }
-/* background -color team */
+/* background-color team */
 .bgc-team {
   background-color: #F5F4FA;
 }

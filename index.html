@@ -6,47 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Web studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <!-- хедер -->
   <header class="header">
 <!-- навигация со ссылками по сайту -->
-    <nav class="nav-header">
-      <a href="index.html" class="link-logo"><span class="logo">Web </span>
-         <span class="logo-studio">Studio</span>
-      </a>
-      <ul class="list-header">
-        <li>
-          <a href="" class="link">Студия</a>
-        </li>
-        <li>
-          <a href="portfolio.html" class="link">Портфолио</a>
-        </li>
-        <li>
-          <a href="" class="link">Контакты</a>
-        </li>
-      </ul>
+    <div class="container">
+      <nav class="nav-header">
+        <a href="index.html" class="link-logo"><span class="logo">Web </span>
+           <span class="logo-studio">Studio</span>
+        </a>
+        <ul class="list-header list">
+          <li>
+            <a href="" class="link">Студия</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li>
+            <a href="" class="link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 <!-- контакты -->
-    <address class="address-header"> 
-      <ul class="list-address">
-        <!-- електроннaя почтa -->
-        <li>
-          <a href="mailto:info@devstudio.com" class="link">
-            <img src="./images/mailHeader.svg" alt="email">
-            info@devstudio.com
-          </a> 
-        </li>
-        <!-- телефон -->
-        <li>
-          <a href="tel:+38 096 111 11 11" class="link">
-            <img src="./images/smartphoneHeader.svg" alt="email">
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </address>
-    </nav>
+    <div class="container">
+      <address class="address-header"> 
+        <ul class="list-address list">
+          <!-- електроннaя почтa -->
+          <li>
+            <a href="mailto:info@devstudio.com" class="link">
+              <img src="./images/mailHeader.svg" alt="email">
+              info@devstudio.com
+            </a> 
+          </li>
+          <!-- телефон -->
+          <li>
+            <a href="tel:+38 096 111 11 11" class="link">
+              <img src="./images/smartphoneHeader.svg" alt="email">
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </address>    
+    </div>
   </header>
 <!-- главный контент -->
   <main>
@@ -55,42 +60,43 @@
     <div class="hero-img">  
       <h1 class="section-title">эффективные решения<br>
          для вашего бизнеса</h1>     
-    <a href="" class="link">Заказать услугу</a>
+    <a href="" class="link hero-link">Заказать услугу</a>
     </div>
     </section>
 <!-- секция Features -->
     <section class="section">
+      <div class="container">
       <!-- <h2>Наши приемущества</h2> -->
-      <ul class="list-features">
-        <li>
-          <img src="./images/antenna1.svg" alt="антена">
-          <h3 class="title-features">Внимание к деталям</h3>
-          <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-        </li>
-        <li>
-          <img src="./images/clock1.svg" alt="clock">
-          <h3 class="title-features">Пунктуальность</h3>
-          <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-        </li>
-        <li>
-          <img src="./images/Vector.svg" alt="vector">
-          <h3 class="title-features">Планирование</h3>
-          <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-        </li>
-        <li>
-          <img src="./images/astronaut1.svg" alt="astronaut">
-          <h3 class="title-features">Современные технологии</h3>
-          <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-      </ul>
+        <ul class="list-features list">
+          <li>
+            <img src="./images/antenna1.svg" alt="антена">
+            <h3 class="title-features">Внимание к деталям</h3>
+            <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          </li>
+          <li>
+            <img src="./images/clock1.svg" alt="clock">
+            <h3 class="title-features">Пунктуальность</h3>
+            <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          </li>
+          <li>
+            <img src="./images/Vector.svg" alt="vector">
+            <h3 class="title-features">Планирование</h3>
+            <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          </li>
+          <li>
+            <img src="./images/astronaut1.svg" alt="astronaut">
+            <h3 class="title-features">Современные технологии</h3>
+            <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <!-- Полоска -->
-    <div class="border">        
-    </div>
+ 
 <!-- секция чем мы занимаемся -->
     <section class="section">
-      <h2 class="section-title">Чем мы занимаемся</h2>
-      <ul class="list-present">
+      <div class="container">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+      <ul class="list-present list">
         <li>
           <a href="" class="link">
             <img src="./images/desctopApp.jpg" alt="desctopApp" >
@@ -110,20 +116,22 @@
           </a>
         </li>
       </ul>
+      </div>
     </section>
     <!-- секция Наша команда -->
     <section class="section bgc-team">
-      <h2 class="section-title">Наша команда</h2>
+      <div class="container">
+        <h2 class="section-title">Наша команда</h2>
       <!-- Таблица карточек команды -->
-      <ul class="list-team">
+      <ul class="list-team list">
         <li class="list-item">
           <a href="" class="link">
-            <img src="./images/JohnSmith.jpg" alt="John Smith">
+            <img src="./images/JohnSmith.jpg" alt="John Smith" class="team-img">
             <h3 class="title-team">John Smith</h3>
             <p class="text">Product Designer</p>
           </a>
           <!-- подтаблица социальных сетей -->
-          <ul class="list-social">
+          <ul class="list-social list">
             <li>
               <a href="" aria-label="Ссылка на Instagram" class="link">
                 Instagram
@@ -148,12 +156,12 @@
 
         <li class="list-item">
           <a href="" class="link">          
-            <img src="./images/MartaStewart.jpg" alt="Marta Stewart">
+            <img src="./images/MartaStewart.jpg" alt="Marta Stewart" class="team-img">
             <h3 class="title-team">Marta Stewart</h3>
             <p class="text">Frontend Developer</p>
           </a>  
             <!-- подтаблица социальных сетей -->
-            <ul class="list-social">
+            <ul class="list-social list">
               <li>
                 <a href="" aria-label="Ссылка на Instagram" class="link">
                   Instagram
@@ -178,7 +186,7 @@
 
           <li  class="list-item">
             <a href="" class="link">
-              <img src="./images/RobertJakix.jpg" alt="Robert Jakis">
+              <img src="./images/RobertJakix.jpg" alt="Robert Jakis" class="team-img">
               <h3 class="title-team">Robert Jakis</h3>
               <p class="text">Marketing</p>
             </a>
@@ -208,7 +216,7 @@
 
             <li  class="list-item"s>
               <a href="" class="link">
-                <img src="./images/MartinDoe.jpg" alt="Martin Doe">
+                <img src="./images/MartinDoe.jpg" alt="Martin Doe" class="team-img">
                 <h3 class="title-team">Martin Doe</h3>
                 <p class="text">UI Designer</p>
               </a>
@@ -235,11 +243,13 @@
                   </a>
                 </li>
               </ul>
+      </div>
     </section>
     <!-- Секция постоянные клиенты -->
     <section class="section">
-      <h2 class="section-title"s>Постоянные клиенты</h2>
-      <ul class="list-client">
+      <div class="container">
+        <h2 class="section-title"s>Постоянные клиенты</h2>
+      <ul class="list-client list">
         <li>
           <a href="" class="link">
             <img src="./images/ya&co.svg" alt="YA & CO">
@@ -271,6 +281,7 @@
           </a>
         </li>
       </ul>
+      </div>
     </section>
   </main> 
   <!-- footer -->
@@ -291,7 +302,7 @@
     <!-- footer социальные сети -->
     <div>
       <b class="cosial-subscribe">присоединяйтесь</b>
-      <ul class="list-subscribe">
+      <ul class="list-subscribe list">
         <li>
           <a href="" aria-label="Ссылка на Instagram" class="link">
             Instagram
