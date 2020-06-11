@@ -13,37 +13,34 @@
 <!-- хедер -->
   <header class="header">
 <!-- навигация со ссылками по сайту -->
-    <div class="container">
-      <nav class="nav-header">
+      <nav class="nav-header container">
         <a href="index.html" class="link-logo"><span class="logo">Web </span>
            <span class="logo-studio">Studio</span>
         </a>
         <ul class="list-header list">
-          <li>
+          <li class="item">
             <a href="" class="link">Студия</a>
           </li>
-          <li>
+          <li class="item">
             <a href="portfolio.html" class="link">Портфолио</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" class="link">Контакты</a>
           </li>
-        </ul>
-      </nav>
-    </div>
+        </ul>     
 <!-- контакты -->
-    <div class="container">
-      <address class="address-header"> 
+    <!-- <div class="container"> -->
+      <address class="address-header "> 
         <ul class="list-address list">
           <!-- електроннaя почтa -->
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
               <img src="./images/mailHeader.svg" alt="email">
               info@devstudio.com
             </a> 
           </li>
           <!-- телефон -->
-          <li>
+          <li class="item">
             <a href="tel:+38 096 111 11 11" class="link">
               <img src="./images/smartphoneHeader.svg" alt="email">
               +38 096 111 11 11
@@ -51,7 +48,8 @@
           </li>
         </ul>
       </address>    
-    </div>
+      <!-- </div> -->
+     </nav>
   </header>
 <!-- главный контент -->
   <main>
@@ -68,23 +66,23 @@
       <div class="container">
       <!-- <h2>Наши приемущества</h2> -->
         <ul class="list-features list">
-          <li>
-            <img src="./images/antenna1.svg" alt="антена">
+          <li class="item">
+            <img src="./images/antenna1.svg" alt="антена" class="features-img">
             <h3 class="title-features">Внимание к деталям</h3>
             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li>
-            <img src="./images/clock1.svg" alt="clock">
+          <li class="item">
+            <img src="./images/clock1.svg" alt="clock" class="features-img">
             <h3 class="title-features">Пунктуальность</h3>
             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
-          <li>
-            <img src="./images/Vector.svg" alt="vector">
+          <li class="item">
+            <img src="./images/Vector.svg" alt="vector" class="features-img">
             <h3 class="title-features">Планирование</h3>
             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li>
-            <img src="./images/astronaut1.svg" alt="astronaut">
+          <li class="item">
+            <img src="./images/astronaut1.svg" alt="astronaut" class="features-img">
             <h3 class="title-features">Современные технологии</h3>
             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -97,19 +95,19 @@
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
       <ul class="list-present list">
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/desctopApp.jpg" alt="desctopApp" >
             <h3 class="title-present">Десктопные приложения</h3>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/mobileApp.jpg" alt="mobileApp" >
             <h3 class="title-present">Мобильные приложения</h3>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/desigionApp.jpg" alt="desigionApp">
             <h3 class="title-present">Дизайнерские решения</h3>
@@ -118,13 +116,14 @@
       </ul>
       </div>
     </section>
+
     <!-- секция Наша команда -->
-    <section class="section bgc-team">
+    <section class="section bgc-team ">
       <div class="container">
-        <h2 class="section-title">Наша команда</h2>
+        <h2 class="section-title section-padding">Наша команда</h2>
       <!-- Таблица карточек команды -->
       <ul class="list-team list">
-        <li class="list-item">
+        <li class="item">
           <a href="" class="link">
             <img src="./images/JohnSmith.jpg" alt="John Smith" class="team-img">
             <h3 class="title-team">John Smith</h3>
@@ -134,27 +133,27 @@
           <ul class="list-social list">
             <li>
               <a href="" aria-label="Ссылка на Instagram" class="link">
-                Instagram
+                I
               </a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Twitter" class="link">
-                Twitter
+                T
               </a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Facebook" class="link">
-                Facebook
+                FB
               </a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                LinkedIn
+                LIn
               </a>
             </li>
           </ul>
 
-        <li class="list-item">
+        <li class="item ">
           <a href="" class="link">          
             <img src="./images/MartaStewart.jpg" alt="Marta Stewart" class="team-img">
             <h3 class="title-team">Marta Stewart</h3>
@@ -164,82 +163,82 @@
             <ul class="list-social list">
               <li>
                 <a href="" aria-label="Ссылка на Instagram" class="link">
-                  Instagram
+                  Insta
                 </a>
               </li>
               <li>
                 <a href="" aria-label="Ссылка на Twitter" class="link">
-                  Twitter
+                  Twit
                 </a>
               </li>
               <li>
                 <a href="" aria-label="Ссылка на Facebook" class="link">
-                  Facebook
+                  FB
                 </a>
               </li>
               <li>
                 <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                  LinkedIn
+                  LIn
                 </a>
               </li>
             </ul>
 
-          <li  class="list-item">
+          <li  class="item">
             <a href="" class="link">
               <img src="./images/RobertJakix.jpg" alt="Robert Jakis" class="team-img">
               <h3 class="title-team">Robert Jakis</h3>
               <p class="text">Marketing</p>
             </a>
               <!-- подтаблица социальных сетей -->
-              <ul class="list-social">
+              <ul class="list-social list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link">
-                    Instagram
+                    Insta
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="link">
-                    Twitter
+                    Twit
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Facebook" class="link">
-                    Facebook
+                    FB
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                    LinkedIn
+                    LIn
                   </a>
                 </li>
               </ul>
 
-            <li  class="list-item"s>
+            <li  class="item ">
               <a href="" class="link">
                 <img src="./images/MartinDoe.jpg" alt="Martin Doe" class="team-img">
                 <h3 class="title-team">Martin Doe</h3>
                 <p class="text">UI Designer</p>
               </a>
               <!-- подтаблица социальных сетей -->
-              <ul class="list-social">
+              <ul class="list-social list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link">
-                    Instagram
+                    Insta
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="link">
-                    Twitter
+                    Twit
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Facebook" class="link">
-                    Facebook
+                    FB
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                    LinkedIn
+                    LIn
                   </a>
                 </li>
               </ul>
@@ -248,34 +247,34 @@
     <!-- Секция постоянные клиенты -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title"s>Постоянные клиенты</h2>
+        <h2 class="section-title section-padding">Постоянные клиенты</h2>
       <ul class="list-client list">
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/ya&co.svg" alt="YA & CO">
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/taglineHere.svg" alt="company tagline here">
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/company.svg" alt="company">
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/fosterPeters.svg" alt="foster peters" class="logo-client">
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/brand.svg" alt="brand">
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="" class="link">
             <img src="./images/companyTagLine.svg" alt="company tag line">
           </a>
@@ -285,7 +284,7 @@
     </section>
   </main> 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer container">
     <a href="index.html" class="link-logo"><span class="logo">Web </span>
       <span class="logo-studio">Studio</span>
     </a>
@@ -300,7 +299,7 @@
       </address>
     </div>
     <!-- footer социальные сети -->
-    <div>
+    <div >
       <b class="cosial-subscribe">присоединяйтесь</b>
       <ul class="list-subscribe list">
         <li>
@@ -340,7 +339,7 @@
     <div class="border-footer">        
     </div>
     <!-- copywriting -->
-    <div>
+    <div >
       <p class="copywriting">&copy;2020 | Developed by GoIT Students </p>
     </div>
   </footer>
